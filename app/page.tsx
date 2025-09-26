@@ -1,7 +1,17 @@
+import { Header } from "@/components/landing/header";
+import { HeroSection } from "@/components/landing/hero-section";
+import { DemoInterface } from "@/components/landing/demo-interface";
+import { ProblemSection } from "@/components/landing/problem-section";
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="min-h-screen bg-amber-50">
+      <Header />
+      <main>
+        <HeroSection />
+        <DemoInterface />
+        <ProblemSection />
+      </main>
+    </div>
+  );
 }
